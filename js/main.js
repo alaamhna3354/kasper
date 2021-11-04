@@ -12,14 +12,11 @@ document.getElementById('over-lay').onclick = (function () {
 // animation width of skills
 let sectionSlills = document.getElementById('skills');
 let spans = document.querySelectorAll('.prog span');
-
 window.onscroll = function () {
     if (window.scrollY >= sectionSlills.offsetTop) {
         spans.forEach((span) => {
             span.style.width = span.dataset.progress;
             span.classList.remove('zero')
         });
-
     }
-
 };
